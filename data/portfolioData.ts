@@ -24,12 +24,13 @@ export const portfolioItems: PortfolioItem[] = [
     description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
     awards: ['美国设计奖', '法国设计奖', '缪斯设计奖'],
     tags: ['IP全案', '包装设计', '文创周边'],
-    cover: '/images/Allinsight-品牌全案_02.jpg',// 对应 public/images/下的文件
+    cover: '/images/Allinsight-品牌全案_04.jpg',// 对应 public/images/下的文件
     images: [
+      '/images/Allinsight-品牌全案_02.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_03.jpg',  // 加逗号
-      '/images/Allinsight-品牌全案_04.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_05.jpg',  // 加逗号
-      '/images/Allinsight-品牌全案_06.jpg'   // 最后一项可以不加，但加了也没问题
+      '/images/Allinsight-品牌全案_06.jpg',  // 加逗号
+      '/images/Allinsight-品牌全案_07.jpg'
     ]
   },
   {
@@ -39,9 +40,15 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
     tags: ['LOGO', 'IP形象', '文创'],
-    cover: 'https://picsum.photos/800/600?random=5', // 替换为: PDF Page 8 左侧
+    cover: '/images/Allinsight-品牌全案_08.jpg',// 对应 public/images/下的文件
     images: [
-      'https://picsum.photos/1200/800?random=5', // 替换为: PDF Page 8 右侧 (多色展示)
+      '/images/Allinsight-品牌全案_09.jpg',
+      /images/Allinsight-品牌全案_10.jpg',
+      /images/Allinsight-品牌全案_11.jpg',
+      /images/Allinsight-品牌全案_12.jpg',
+      /images/Allinsight-品牌全案_13.jpg',
+      /images/Allinsight-品牌全案_14.jpg',
+      /images/Allinsight-品牌全案_15.jpg'
     ]
   },
   {
