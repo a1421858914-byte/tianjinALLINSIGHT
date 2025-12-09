@@ -26,10 +26,10 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['IP全案', '包装设计', '文创周边'],
     cover: '/images/Allinsight-品牌全案_02.jpg',// 对应 public/images/下的文件
     images: [
-      '/images/Allinsight-品牌全案_03.jpg'
-      '/images/Allinsight-品牌全案_04.jpg'
-      '/images/Allinsight-品牌全案_05.jpg'
-      '/images/Allinsight-品牌全案_06.jpg'
+      '/images/Allinsight-品牌全案_03.jpg',  // 加逗号
+      '/images/Allinsight-品牌全案_04.jpg',  // 加逗号
+      '/images/Allinsight-品牌全案_05.jpg',  // 加逗号
+      '/images/Allinsight-品牌全案_06.jpg'   // 最后一项可以不加，但加了也没问题
     ]
   },
   {
