@@ -46,9 +46,6 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/Allinsight-品牌全案_10.jpg',
       '/images/Allinsight-品牌全案_11.jpg',
       '/images/Allinsight-品牌全案_12.jpg',
-      '/images/Allinsight-品牌全案_13.jpg',
-      '/images/Allinsight-品牌全案_14.jpg',
-      '/images/Allinsight-品牌全案_15.jpg'
     ]
   },
   {
@@ -58,11 +55,10 @@ export const portfolioItems: PortfolioItem[] = [
     client: '津南区小站稻',
     description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
     tags: ['IP形象', '地方文旅', '3D打印'],
-    cover: 'https://picsum.photos/800/600?random=6', // 替换为: PDF Page 13
+    cover: '/images/Allinsight-品牌全案_13.jpg',
     images: [
-      'https://picsum.photos/1200/800?random=6', // 替换为: PDF Page 13
-      'https://picsum.photos/1200/800?random=7', // 替换为: PDF Page 14 (三视图)
-      'https://picsum.photos/1200/800?random=8', // 替换为: PDF Page 15 (应用场景)
+      '/images/Allinsight-品牌全案_14.jpg',
+      '/images/Allinsight-品牌全案_15.jpg'
     ]
   },
   {
@@ -72,10 +68,9 @@ export const portfolioItems: PortfolioItem[] = [
     client: '武清区织采宫',
     description: '非遗文化IP化设计，结合盲盒包装与文创产品开发。',
     tags: ['IP形象', '包装设计', '非遗'],
-    cover: 'https://picsum.photos/800/600?random=9', // 替换为: PDF Page 16
+    cover: '/images/Allinsight-品牌全案_16.jpg',
     images: [
-      'https://picsum.photos/1200/800?random=9', // 替换为: PDF Page 16
-      'https://picsum.photos/1200/800?random=10', // 替换为: PDF Page 17 (实物拍摄)
+      '/images/Allinsight-品牌全案_17.jpg'
     ]
   },
   {
@@ -86,9 +81,13 @@ export const portfolioItems: PortfolioItem[] = [
     description: '天津市金街IP征集设计一等奖作品。',
     awards: ['天津市金街IP征集一等奖'],
     tags: ['IP形象', '手办'],
-    cover: 'https://picsum.photos/800/600?random=11', // 替换为: PDF Page 19
+    cover: '/images/Allinsight-品牌全案_19.jpg', // 替换为: PDF Page 19
     images: [
-      'https://picsum.photos/1200/800?random=11',
+      '/images/Allinsight-品牌全案_18.jpg',
+      '/images/Allinsight-品牌全案_20.jpg',
+      '/images/Allinsight-品牌全案_21.jpg',
+      '/images/Allinsight-品牌全案_22.jpg',
+      '/images/Allinsight-品牌全案_23.jpg'
     ]
   },
   {
@@ -98,10 +97,9 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: 'https://picsum.photos/800/600?random=12', // 替换为: PDF Page 24
+    cover: '/images/Allinsight-品牌全案_24.jpg', 
     images: [
-      'https://picsum.photos/1200/800?random=12',
-      'https://picsum.photos/1200/800?random=13', // 替换为: PDF Page 25
+      '/images/Allinsight-品牌全案_25.jpg'
     ]
   },
 
