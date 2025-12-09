@@ -43,12 +43,12 @@ export const portfolioItems: PortfolioItem[] = [
     cover: '/images/Allinsight-品牌全案_08.jpg',// 对应 public/images/下的文件
     images: [
       '/images/Allinsight-品牌全案_09.jpg',
-      /images/Allinsight-品牌全案_10.jpg',
-      /images/Allinsight-品牌全案_11.jpg',
-      /images/Allinsight-品牌全案_12.jpg',
-      /images/Allinsight-品牌全案_13.jpg',
-      /images/Allinsight-品牌全案_14.jpg',
-      /images/Allinsight-品牌全案_15.jpg'
+      '/images/Allinsight-品牌全案_10.jpg',
+      '/images/Allinsight-品牌全案_11.jpg',
+      '/images/Allinsight-品牌全案_12.jpg',
+      '/images/Allinsight-品牌全案_13.jpg',
+      '/images/Allinsight-品牌全案_14.jpg',
+      '/images/Allinsight-品牌全案_15.jpg'
     ]
   },
   {
