@@ -24,12 +24,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
     awards: ['美国设计奖', '法国设计奖', '缪斯设计奖'],
     tags: ['IP全案', '包装设计', '文创周边'],
-    cover: '/images/Allinsight-品牌全案_02.jpg',
+    cover: 'https://github.com/a1421858914-byte/tianjinALLINSIGHT/edit/main/images/images/Allinsight-品牌全案_02.jpg',
     images: [
-      '/images/Allinsight-品牌全案_03.jpg'
-      '/images/Allinsight-品牌全案_04.jpg'
-      '/images/Allinsight-品牌全案_05.jpg'
-      '/images/Allinsight-品牌全案_06.jpg'
+      'https://github.com/a1421858914-byte/tianjinALLINSIGHT/edit/main/images/Allinsight-品牌全案_03.jpg'
+      'https://github.com/a1421858914-byte/tianjinALLINSIGHT/edit/main/images/images/Allinsight-品牌全案_04.jpg'
+      'https://github.com/a1421858914-byte/tianjinALLINSIGHT/edit/main/images/images/Allinsight-品牌全案_05.jpg'
+      'https://github.com/a1421858914-byte/tianjinALLINSIGHT/edit/main/images/images/Allinsight-品牌全案_06.jpg'
     ]
   },
   {
