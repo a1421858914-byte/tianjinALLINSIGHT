@@ -182,7 +182,7 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/videos/学院奖4.mp4',
       '/images/videos/学院奖5.mp4',
       '/images/videos/学院奖6.mp4'
-      ]
+      ],
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
