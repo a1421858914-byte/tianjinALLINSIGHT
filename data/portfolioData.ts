@@ -174,9 +174,16 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
     tags: ['颁奖典礼', '活动视频'],
-    cover: 'https://picsum.photos/800/600?random=21', // 替换为: PDF Page Video-4
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4', // 替换为实际视频文件
-    images: ['https://picsum.photos/1200/800?random=21']
+    cover: '/images/Allinsight-视频制作_03.jpg', 
+    videoUrl: '/images/videos/学院奖1.mp4',
+    images: [
+      '/images/videos/学院奖1.mp4',
+      '/images/videos/学院奖2.mp4',
+      '/images/videos/学院奖3.mp4',
+      '/images/videos/学院奖4.mp4',
+      '/images/videos/学院奖5.mp4',
+      '/images/videos/学院奖6.mp4'
+     ]
   },
   {
     id: 'video-3',
