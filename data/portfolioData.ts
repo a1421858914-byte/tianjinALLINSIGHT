@@ -175,7 +175,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
     tags: ['颁奖典礼', '活动视频'],
     cover: '/images/Allinsight-视频制作_03.jpg', 
-    videoUrls: '/images/videos/学院奖1.mp4',
+    videoUrl: '/images/videos/学院奖1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
@@ -186,7 +186,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '基于AIGC生成的艺术风格化视频，重构聊斋志异的奇幻世界。',
     tags: ['AI视频', '艺术'],
     cover: '/images/Allinsight-视频制作_01.jpg', 
-    videoUrls: '/images/videos/聊斋新语1.mp4',
+    videoUrl: '/images/videos/聊斋新语1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
@@ -198,7 +198,7 @@ export const portfolioItems: PortfolioItem[] = [
     awards: ['东方设计奖一等奖'],
     tags: ['公益视频', 'MG动画'],
     cover: '/images/Allinsight-视频制作_08.jpg', 
-    videoUrls: '/images/videos/哪吒反诈.mp4',
+    videoUrl: '/images/videos/哪吒反诈.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
    {
@@ -209,7 +209,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '基于AIGC生成的艺术风格化视频。',
     tags: ['公益视频'],
     cover: '/images/Allinsight-视频制作_07.jpg', 
-    videoUrls: '/images/videos/津问.mp4',
+    videoUrl: '/images/videos/津问.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
 
