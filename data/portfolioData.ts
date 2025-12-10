@@ -175,14 +175,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
     tags: ['颁奖典礼', '活动视频'],
     cover: '/images/Allinsight-视频制作_03.jpg', 
-    videoUrls:[
-      '/images/videos/学院奖1.mp4',
-      '/images/videos/学院奖2.mp4',
-      '/images/videos/学院奖3.mp4',
-      '/images/videos/学院奖4.mp4',
-      '/images/videos/学院奖5.mp4',
-      '/images/videos/学院奖6.mp4'
-      ],
+    videoUrls: '/images/videos/学院奖1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
@@ -192,7 +185,8 @@ export const portfolioItems: PortfolioItem[] = [
     client: '自研',
     description: '基于AIGC生成的艺术风格化视频，重构聊斋志异的奇幻世界。',
     tags: ['AI视频', '艺术'],
-    cover: 'https://picsum.photos/800/600?random=22', // 替换为: PDF Page Video-6
+    cover: '/images/Allinsight-视频制作_01.jpg', 
+    videoUrls: '/images/videos/聊斋新语1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
@@ -203,7 +197,19 @@ export const portfolioItems: PortfolioItem[] = [
     description: '荣获东方设计奖全国一等奖的公益普法视频，以哪吒形象进行反诈宣传。',
     awards: ['东方设计奖一等奖'],
     tags: ['公益视频', 'MG动画'],
-    cover: 'https://picsum.photos/800/600?random=23', // 替换为: PDF Page Video-8
+    cover: '/images/Allinsight-视频制作_08.jpg', 
+    videoUrls: '/images/videos/哪吒反诈.mp4',
+    images: ['https://picsum.photos/1200/800?random=23']
+  },
+   {
+    id: 'video-5',
+    title: '津问',
+    category: Category.VIDEO,
+    client: '河北区政府',
+    description: '基于AIGC生成的艺术风格化视频。',
+    tags: ['公益视频'],
+    cover: '/images/Allinsight-视频制作_07.jpg', 
+    videoUrls: '/images/videos/津问.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
 
@@ -215,11 +221,13 @@ export const portfolioItems: PortfolioItem[] = [
     client: '江苏海洋大学、东方好创意等',
     description: '提供AIGC学习、智能体搭建、八小时定向设计挑战赛等专业培训服务。',
     tags: ['AI培训', 'Agent', '教育'],
-    cover: 'https://picsum.photos/800/600?random=30', // 替换为: PDF Page Training-3
+    cover: '/images/Allinsight-智能培训_02.jpg',
     images: [
-      'https://picsum.photos/1200/800?random=30',
-      'https://picsum.photos/1200/800?random=31', // 替换为: PDF Page Training-4
-      'https://picsum.photos/1200/800?random=32', // 替换为: PDF Page Training-5 (课件展示)
+      '/images/Allinsight-智能培训_02.jpg',
+      '/images/Allinsight-智能培训_03.jpg', 
+      '/images/Allinsight-智能培训_04.jpg',
+      '/images/Allinsight-智能培训_05.jpg',
+      '/images/Allinsight-智能培训_06.jpg'
     ]
   },
   {
@@ -229,8 +237,16 @@ export const portfolioItems: PortfolioItem[] = [
     client: '意大利约布斯学院',
     description: 'AIGC艺术设计培训，跨国合作项目 "Painted Skin Workshop"。',
     tags: ['国际交流', 'AI电影'],
-    cover: 'https://picsum.photos/800/600?random=33', // 替换为: PDF Page Training-7
-    images: ['https://picsum.photos/1200/800?random=33']
+    cover: '/images/Allinsight-智能培训_13.jpg', 
+    images: [
+      '/images/Allinsight-智能培训_07.jpg',
+      '/images/Allinsight-智能培训_08.jpg',
+      '/images/Allinsight-智能培训_09.jpg',     
+      '/images/Allinsight-智能培训_10.jpg',      
+      '/images/Allinsight-智能培训_11.jpg',      
+      '/images/Allinsight-智能培训_12.jpg',     
+      '/images/Allinsight-智能培训_13.jpg',       
+    ]
   },
 
   // --- Interactive Exhibition (交互展陈) ---
