@@ -234,8 +234,8 @@ export const portfolioItems: PortfolioItem[] = [
     client: '河北区政府',
     description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
     tags: ['AR', '交互设计', '数字展陈'],
-    cover: 'https://picsum.photos/800/600?random=40', // 替换为: PDF Page Exhibit-2
-    images: ['https://picsum.photos/1200/800?random=40']
+    cover: '/images/Allinsight-交互展陈_01.jpg', // 替换为: PDF Page Exhibit-2
+    images: ['/images/Allinsight-交互展陈_02.jpg']
   },
   {
     id: 'exhibit-2',
@@ -244,7 +244,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津商务职业学院',
     description: '校园展陈设计，数字化互动大屏与实体展板的结合。',
     tags: ['展厅设计', '校园文化'],
-    cover: 'https://picsum.photos/800/600?random=41', // 替换为: PDF Page Exhibit-3
-    images: ['https://picsum.photos/1200/800?random=41']
+    cover: '/images/Allinsight-交互展陈_01.jpg', // 替换为: PDF Page Exhibit-3
+    images: ['/images/Allinsight-交互展陈_03.jpg']
   }
 ];
