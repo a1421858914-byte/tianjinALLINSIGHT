@@ -176,14 +176,12 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['颁奖典礼', '活动视频'],
     cover: '/images/Allinsight-视频制作_03.jpg', 
     videoUrl: '/images/videos/学院奖1.mp4',
-    images: [
-      '/images/videos/学院奖1.mp4',
-      '/images/videos/学院奖2.mp4',
-      '/images/videos/学院奖3.mp4',
-      '/images/videos/学院奖4.mp4',
-      '/images/videos/学院奖5.mp4',
-      '/images/videos/学院奖6.mp4'
-     ]
+    videoUr2: '/images/videos/学院奖2.mp4',
+    videoUr3:'/images/videos/学院奖3.mp4',
+    videoUr4:'/images/videos/学院奖4.mp4',
+    videoUr5:'/images/videos/学院奖5.mp4',
+    videoUr6:'/images/videos/学院奖6.mp4'
+    images: ['https://picsum.photos/1200/800?random=22']
   },
   {
     id: 'video-3',
