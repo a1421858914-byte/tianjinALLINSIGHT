@@ -28,6 +28,7 @@ export const portfolioItems: PortfolioItem[] = [
     images: [
       '/images/Allinsight-品牌全案_02.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_03.jpg',  // 加逗号
+      '/images/Allinsight-品牌全案_04.jpg',
       '/images/Allinsight-品牌全案_05.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_06.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_07.jpg'
@@ -40,12 +41,13 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
     tags: ['LOGO', 'IP形象', '文创'],
-    cover: '/images/Allinsight-品牌全案_08.jpg',// 对应 public/images/下的文件
+    cover: '/images/Allinsight-品牌全案_10.jpg',// 对应 public/images/下的文件
     images: [
+      '/images/Allinsight-品牌全案_08.jpg',
       '/images/Allinsight-品牌全案_09.jpg',
       '/images/Allinsight-品牌全案_10.jpg',
       '/images/Allinsight-品牌全案_11.jpg',
-      '/images/Allinsight-品牌全案_12.jpg',
+      '/images/Allinsight-品牌全案_12.jpg'
     ]
   },
   {
@@ -55,8 +57,9 @@ export const portfolioItems: PortfolioItem[] = [
     client: '津南区小站稻',
     description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
     tags: ['IP形象', '地方文旅', '3D打印'],
-    cover: '/images/Allinsight-品牌全案_13.jpg',
+    cover: '/images/Allinsight-品牌全案_15.jpg',
     images: [
+      '/images/Allinsight-品牌全案_13.jpg',
       '/images/Allinsight-品牌全案_14.jpg',
       '/images/Allinsight-品牌全案_15.jpg'
     ]
@@ -68,8 +71,9 @@ export const portfolioItems: PortfolioItem[] = [
     client: '武清区织采宫',
     description: '非遗文化IP化设计，结合盲盒包装与文创产品开发。',
     tags: ['IP形象', '包装设计', '非遗'],
-    cover: '/images/Allinsight-品牌全案_16.jpg',
+    cover: '/images/Allinsight-品牌全案_17.jpg',
     images: [
+      '/images/Allinsight-品牌全案_16.jpg',
       '/images/Allinsight-品牌全案_17.jpg'
     ]
   },
@@ -81,13 +85,9 @@ export const portfolioItems: PortfolioItem[] = [
     description: '天津市金街IP征集设计一等奖作品。',
     awards: ['天津市金街IP征集一等奖'],
     tags: ['IP形象', '手办'],
-    cover: '/images/Allinsight-品牌全案_19.jpg', // 替换为: PDF Page 19
+    cover: '/images/Allinsight-品牌全案_19.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_18.jpg',
-      '/images/Allinsight-品牌全案_20.jpg',
-      '/images/Allinsight-品牌全案_21.jpg',
-      '/images/Allinsight-品牌全案_22.jpg',
-      '/images/Allinsight-品牌全案_23.jpg'
+      '/images/Allinsight-品牌全案_19.jpg'
     ]
   },
   {
@@ -97,9 +97,61 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: '/images/Allinsight-品牌全案_24.jpg', 
+    cover: '/images/Allinsight-品牌全案_25.jpg', 
     images: [
+      '/images/Allinsight-品牌全案_24.jpg', 
       '/images/Allinsight-品牌全案_25.jpg'
+    ]
+  },
+   {
+    id: 'brand-7',
+    title: '天津金皇大酒店 IP形象设计',
+    category: Category.BRAND,
+    client: '天津金皇大酒店',
+    description: '天津金皇大酒店专属IP形象设计及周边文创。',
+    tags: ['IP形象', '文创', '培训', '智能体', '培训'],
+    cover: '/images/Allinsight-品牌全案_27.jpg', 
+    images: [
+      '/images/Allinsight-品牌全案_26.jpg', 
+      '/images/Allinsight-品牌全案_27.jpg'
+    ]
+  },
+  {
+    id: 'brand-8',
+    title: '2024中泰职业教育国际产教融合发展研讨会会议 雕塑及伴手礼',
+    category: Category.BRAND,
+    client: '2024中泰职业教育国际产教融合发展研讨会会议',
+    description: '2024中泰职业教育国际产教融合发展研讨会会议主题雕塑及伴手礼。',
+    tags: ['IP手办', '雕塑' ],
+    cover: '/images/Allinsight-品牌全案_18.jpg', 
+    images: [
+      '/images/Allinsight-品牌全案_18.jpg'
+    ]
+  },
+  {
+    id: 'brand-9',
+    title: '中建新科 IP形象',
+    category: Category.BRAND,
+    client: '中建新科',
+    description: '中建新科IP形象及伴手礼。',
+    tags: ['IP形象', '产品图册', '伴手礼' ],
+    cover: '/images/Allinsight-品牌全案_20.jpg', 
+    images: [
+      '/images/Allinsight-品牌全案_20.jpg',
+      '/images/Allinsight-品牌全案_21.jpg',
+      '/images/Allinsight-品牌全案_22.jpg'
+    ]
+  },
+  {
+    id: 'brand-10',
+    title: '武清果蔬 萌宠系列',
+    category: Category.BRAND,
+    client: '武清区农委',
+    description: '武清果树萌宠IP。',
+    tags: ['IP形象'],
+    cover: '/images/Allinsight-品牌全案_23.jpg', 
+    images: [
+      '/images/Allinsight-品牌全案_23.jpg'
     ]
   },
 
@@ -108,11 +160,11 @@ export const portfolioItems: PortfolioItem[] = [
     id: 'video-1',
     title: '金皇酒店宣传视频',
     category: Category.VIDEO,
-    client: '天津金皇房地产有限公司',
+    client: '天津金皇大酒店',
     description: '金皇酒店IP与实景结合的创意宣传视频。',
     tags: ['宣传视频', '实景合成'],
-    cover: 'https://picsum.photos/800/600?random=20', // 替换为: PDF Page Video-2
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', // 替换为实际视频文件
+    cover: '/images/Allinsight-视频制作_02.jpg',
+    videoUrl: '/images/videos/金皇.mp4', 
     images: ['https://picsum.photos/1200/800?random=20']
   },
   {
