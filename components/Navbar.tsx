@@ -22,16 +22,19 @@ const Navbar: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav shadow-lg shadow-black/30' : ''}`}>
       <div className="container mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
-        {/* Logo 区域 */}
+        {/* 左上角logo+文字（可替换成自己的） */}
         <div className="logo">
           <a href="#" className="group flex items-center gap-3">
+            {/* 替换这里的src为你的logo路径，比如 /images/my-logo.png */}
             <img 
               src="/images/logo.png"
-              alt="ALLINSIGHT logo"
+              alt="自定义logo"
               className="w-10 h-10 rounded-lg object-contain"
             />
             <div className="flex flex-col">
+              {/* 替换成你的主文字 */}
               <span className="text-xl font-bold text-white">ALLINSIGHT</span>
+              {/* 替换成你的副标题 */}
               <span className="text-[10px] text-gray-400 uppercase">Project</span>
             </div>
           </a>
@@ -46,12 +49,12 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* 移动端菜单按钮（彻底清理行号+修复语法） */}
+        {/* 移动端菜单按钮（修复核心错误） */}
         <button 
           className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)} {/* 修复：半角括号+箭头 */}
         >
-          <<i className="fa fa-bars"></</i>
+          <i className="fa fa-bars"></i> {/* 修复：标准<i>标签 */}
         </button>
       </div>
 
@@ -77,7 +80,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };
