@@ -27,12 +27,12 @@ const Navbar: React.FC = () => {
           <a href="#" className="group flex items-center gap-3">
             <img 
               src="/images/logo.png"
-              alt="天津ALLINSIGHT logo"
+              alt="ALLINSIGHT logo"
               className="w-10 h-10 rounded-lg object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white">天津ALLINSIGHT</span>
-              <span className="text-[10px] text-gray-400 uppercase">品牌案例</span>
+              <span className="text-xl font-bold text-white">ALLINSIGHT</span>
+              <span className="text-[10px] text-gray-400 uppercase">Project</span>
             </div>
           </a>
         </div>
@@ -46,12 +46,12 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* 移动端菜单按钮（彻底修复标签 + onClick 格式） */}
+        {/* 移动端菜单按钮（彻底清理行号+修复语法） */}
         <button 
           className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)} {/* 修复：用半角括号 */}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          <<i className="fa fa-bars"></</i> {/* 修复：删除多余的 "<" */}
+          <<<i className="fa fa-bars"></</</i>
         </button>
       </div>
 
