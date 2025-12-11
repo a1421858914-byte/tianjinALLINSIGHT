@@ -49,12 +49,12 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* 移动端菜单按钮（修复核心错误） */}
+        {/* 移动端菜单按钮 */}
         <button 
           className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)} {/* 修复：半角括号+箭头 */}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          <<i className="fa fa-bars"></</i>
+          <i className="fa fa-bars"></i>
         </button>
       </div>
 
