@@ -205,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '金皇酒店IP与实景结合的创意宣传视频。',
     tags: ['宣传视频', '实景合成'],
-    cover: '/images/金黄封面1.jpg',
+    cover: '/images/金皇封面1.jpg',
     videoUrl: '/images/videos/金皇.mp4', 
     images: ['https://picsum.photos/1200/800?random=20']
   },
