@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          <<<i className="fa fa-bars"></</</i>
+          <<i className="fa fa-bars"></</i>
         </button>
       </div>
 
