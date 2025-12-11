@@ -27,12 +27,12 @@ const Navbar: React.FC = () => {
           <a href="#" className="group flex items-center gap-3">
             <img 
               src="/images/logo.png"
-              alt="ALLINSIGHT logo"
+              alt="天津ALLINSIGHT logo"
               className="w-10 h-10 rounded-lg object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white">ALLINSIGHT</span>
-              <span className="text-[10px] text-gray-400 uppercase">Project</span>
+              <span className="text-xl font-bold text-white">天津ALLINSIGHT</span>
+              <span className="text-[10px] text-gray-400 uppercase">品牌案例</span>
             </div>
           </a>
         </div>
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* 移动端菜单按钮（修复 <<i> 标签语法） */}
+        {/* 移动端菜单按钮（修复标签语法 + onClick 格式） */}
         <button 
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
