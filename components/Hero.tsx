@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         </h1>
         
         <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up opacity-0" style={{ animationDelay: '0.5s' }}>
-          凝聚创意与技术的结晶，每一个作品都在讲述独特的故事。
+            广告学院&人工智能与科技艺术协同创新中心
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-5 animate-fade-in-up opacity-0" style={{ animationDelay: '0.7s' }}>
