@@ -299,7 +299,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '河北区政府',
     description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
     tags: ['AR', '交互设计', '数字展陈'],
-    cover: '/images/Allinsight-交互展陈_01.jpg.jpg', 
+    cover: '/images/Allinsight-交互展陈_01.jpg',
     images: ['/images/交互河北区1.jpg']
   },
   {
@@ -310,14 +310,14 @@ export const portfolioItems: PortfolioItem[] = [
     description: '校园展陈设计，数字化互动大屏与实体展板的结合。',
     tags: ['展厅设计', '校园文化'],
     cover: '/images/Allinsight-交互展陈_01.jpg', 
-    images: 
-      ['/images/交互学校1.jpg',
-       '/images/交互学校2.jpg',
-       '/images/交互学校3.jpg',
-       '/images/交互学校4.jpg',
-       '/images/交互学校5.jpg',
-       '/images/交互学校6.jpg',
-       '/images/交互学校7.jpg',
-      ]
+    images: [
+      '/images/交互学校1.jpg',
+      '/images/交互学校2.jpg',
+      '/images/交互学校3.jpg',
+      '/images/交互学校4.jpg',
+      '/images/交互学校5.jpg',
+      '/images/交互学校6.jpg',
+      '/images/交互学校7.jpg',
+    ]
   }
 ];
