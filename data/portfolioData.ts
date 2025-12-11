@@ -185,7 +185,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '武清区农委',
     description: '武清果树萌宠IP。',
     tags: ['IP形象'],
-    cover: '/images/武清1.jpg', 
+    cover: '/images/武清1.png', 
     images: [
       '/images/武清1.png',
       '/images/武清2.jpg',
