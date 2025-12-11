@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)} {/* 修复：半角括号+箭头 */}
         >
-          <i className="fa fa-bars"></i> {/* 修复：标准<i>标签 */}
+          <<i className="fa fa-bars"></</i>
         </button>
       </div>
 
