@@ -26,12 +26,20 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['IP全案', '包装设计', '文创周边'],
     cover: '/images/Allinsight-品牌全案_04.jpg',// 对应 public/images/下的文件
     images: [
-      '/images/Allinsight-品牌全案_02.jpg',  // 加逗号
-      '/images/Allinsight-品牌全案_03.jpg',  // 加逗号
       '/images/Allinsight-品牌全案_04.jpg',
-      '/images/Allinsight-品牌全案_05.jpg',  // 加逗号
-      '/images/Allinsight-品牌全案_06.jpg',  // 加逗号
-      '/images/Allinsight-品牌全案_07.jpg'
+      '/images/节气灵兽1.jpg', 
+      '/images/节气灵兽2.jpg', 
+      '/images/节气灵兽3.jpg', 
+      '/images/节气灵兽4.jpg', 
+      '/images/节气灵兽5.jpg', 
+      '/images/节气灵兽6.jpg', 
+      '/images/节气灵兽7.jpg', 
+      '/images/节气灵兽8.jpg', 
+      '/images/Allinsight-品牌全案_03.jpg', 
+      '/images/Allinsight-品牌全案_05.jpg',
+      '/images/节气灵兽9.jpg', 
+      '/images/节气灵兽10.jpg', 
+      '/images/节气灵兽11.jpg'
     ]
   },
   {
@@ -43,11 +51,16 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['LOGO', 'IP形象', '文创'],
     cover: '/images/Allinsight-品牌全案_10.jpg',// 对应 public/images/下的文件
     images: [
-      '/images/Allinsight-品牌全案_08.jpg',
+      '/images/创小星1.jpg',
       '/images/Allinsight-品牌全案_09.jpg',
       '/images/Allinsight-品牌全案_10.jpg',
       '/images/Allinsight-品牌全案_11.jpg',
-      '/images/Allinsight-品牌全案_12.jpg'
+      '/images/创小星2.jpg',
+      '/images/创小星3.jpg',
+      '/images/创小星4.jpg',
+      '/images/创小星5.jpg',
+      '/images/创小星6.jpg',
+      '/images/创小星7.jpg'
     ]
   },
   {
@@ -71,10 +84,17 @@ export const portfolioItems: PortfolioItem[] = [
     client: '武清区织采宫',
     description: '非遗文化IP化设计，结合盲盒包装与文创产品开发。',
     tags: ['IP形象', '包装设计', '非遗'],
-    cover: '/images/Allinsight-品牌全案_17.jpg',
+    cover: '/images/织采采4.jpg',
     images: [
-      '/images/Allinsight-品牌全案_16.jpg',
-      '/images/Allinsight-品牌全案_17.jpg'
+      '/images/织采采1.jpg',
+      '/images/织采采2.jpg',
+      '/images/织采采3.jpg',
+      '/images/织采采4.jpg',
+      '/images/织采采5.jpg',
+      '/images/织采采6.jpg',
+      '/images/织采采7.jpg',
+      '/images/织采采8.jpg',
+      '/images/织采采9.jpg'
     ]
   },
   {
@@ -85,9 +105,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: '天津市金街IP征集设计一等奖作品。',
     awards: ['天津市金街IP征集一等奖'],
     tags: ['IP形象', '手办'],
-    cover: '/images/Allinsight-品牌全案_19.jpg', 
+    cover: '/images/金街2.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_19.jpg'
+      '/images/金街1.jpg',  
+      '/images/金街2.jpg', 
+      '/images/金街3.jpg', 
+      '/images/金街4.jpg'
     ]
   },
   {
@@ -97,10 +120,13 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: '/images/Allinsight-品牌全案_25.jpg', 
+    cover: '/images/大龙邮局5.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_24.jpg', 
-      '/images/Allinsight-品牌全案_25.jpg'
+      '/images/大龙邮局1.jpg',   
+      '/images/大龙邮局2.jpg',  
+      '/images/大龙邮局3.jpg', 
+      '/images/大龙邮局4.jpg', 
+      '/images/大龙邮局5.jpg'
     ]
   },
    {
@@ -110,10 +136,14 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '天津金皇大酒店专属IP形象设计及周边文创。',
     tags: ['IP形象', '文创', '培训', '智能体', '培训'],
-    cover: '/images/Allinsight-品牌全案_27.jpg', 
+    cover: '/images/金皇1.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_26.jpg', 
-      '/images/Allinsight-品牌全案_27.jpg'
+      '/images/金皇1.jpg', 
+      '/images/金皇2.jpg',
+      '/images/金皇3.jpg',
+      '/images/金皇4.jpg',
+      '/images/金皇5.jpg',
+      '/images/金皇6.jpg'
     ]
   },
   {
@@ -123,9 +153,13 @@ export const portfolioItems: PortfolioItem[] = [
     client: '2024中泰职业教育国际产教融合发展研讨会会议',
     description: '2024中泰职业教育国际产教融合发展研讨会会议主题雕塑及伴手礼。',
     tags: ['IP手办', '雕塑' ],
-    cover: '/images/Allinsight-品牌全案_18.jpg', 
+    cover: '/images/喜哥巧妹1.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_18.jpg'
+      '/images/喜哥巧妹1.jpg',
+      '/images/喜哥巧妹2.jpg',
+      '/images/喜哥巧妹3.jpg',
+      '/images/喜哥巧妹4.jpg',
+      '/images/喜哥巧妹5.jpg'
     ]
   },
   {
@@ -135,11 +169,13 @@ export const portfolioItems: PortfolioItem[] = [
     client: '中建新科',
     description: '中建新科IP形象及伴手礼。',
     tags: ['IP形象', '产品图册', '伴手礼' ],
-    cover: '/images/Allinsight-品牌全案_20.jpg', 
+    cover: '/images/科宝1.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_20.jpg',
-      '/images/Allinsight-品牌全案_21.jpg',
-      '/images/Allinsight-品牌全案_22.jpg'
+      '/images/科宝1.jpg',
+      '/images/科宝2.jpg',
+      '/images/科宝3.jpg',
+      '/images/科宝4.jpg',
+      '/images/科宝5.jpg'
     ]
   },
   {
@@ -149,9 +185,15 @@ export const portfolioItems: PortfolioItem[] = [
     client: '武清区农委',
     description: '武清果树萌宠IP。',
     tags: ['IP形象'],
-    cover: '/images/Allinsight-品牌全案_23.jpg', 
+    cover: '/images/武清1.jpg', 
     images: [
-      '/images/Allinsight-品牌全案_23.jpg'
+      '/images/武清1.jpg',
+      '/images/武清2.jpg',
+      '/images/武清3.jpg',
+      '/images/武清4.jpg',
+      '/images/武清5.jpg',
+      '/images/武清6.jpg',
+      '/images/武清7.jpg'
     ]
   },
 
@@ -163,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '金皇酒店IP与实景结合的创意宣传视频。',
     tags: ['宣传视频', '实景合成'],
-    cover: '/images/Allinsight-视频制作_02.jpg',
+    cover: '/images/金黄封面1.jpg',
     videoUrl: '/images/videos/金皇.mp4', 
     images: ['https://picsum.photos/1200/800?random=20']
   },
@@ -174,7 +216,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
     tags: ['颁奖典礼', '活动视频'],
-    cover: '/images/Allinsight-视频制作_03.jpg', 
+    cover: '/images/学院奖封面1.jpg', 
     videoUrl: '/images/videos/学院奖1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
@@ -197,7 +239,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '荣获东方设计奖全国一等奖的公益普法视频，以哪吒形象进行反诈宣传。',
     awards: ['东方设计奖一等奖'],
     tags: ['公益视频', 'MG动画'],
-    cover: '/images/Allinsight-视频制作_08.jpg', 
+    cover: '/images/哪吒封面1.jpg', 
     videoUrl: '/images/videos/哪吒反诈.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
@@ -208,7 +250,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '河北区政府',
     description: '基于AIGC生成的艺术风格化视频。',
     tags: ['公益视频'],
-    cover: '/images/Allinsight-视频制作_07.jpg', 
+    cover: '/images/津问封面1.jpg', 
     videoUrl: '/images/videos/津问.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
@@ -237,7 +279,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '意大利约布斯学院',
     description: 'AIGC艺术设计培训，跨国合作项目 "Painted Skin Workshop"。',
     tags: ['国际交流', 'AI电影'],
-    cover: '/images/Allinsight-智能培训_13.jpg', 
+    cover: '/images/培训意大利1.jpg', 
     images: [
       '/images/Allinsight-智能培训_07.jpg',
       '/images/Allinsight-智能培训_08.jpg',
@@ -257,8 +299,8 @@ export const portfolioItems: PortfolioItem[] = [
     client: '河北区政府',
     description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
     tags: ['AR', '交互设计', '数字展陈'],
-    cover: '/images/Allinsight-交互展陈_01.jpg', // 替换为: PDF Page Exhibit-2
-    images: ['/images/Allinsight-交互展陈_02.jpg']
+    cover: '/images/Allinsight-交互展陈_01.jpg.jpg', 
+    images: ['/images/交互河北区1.jpg']
   },
   {
     id: 'exhibit-2',
@@ -267,7 +309,15 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津商务职业学院',
     description: '校园展陈设计，数字化互动大屏与实体展板的结合。',
     tags: ['展厅设计', '校园文化'],
-    cover: '/images/Allinsight-交互展陈_01.jpg', // 替换为: PDF Page Exhibit-3
-    images: ['/images/Allinsight-交互展陈_03.jpg']
+    cover: '/images/Allinsight-交互展陈_01.jpg', 
+    images: 
+      ['/images/交互学校1.jpg',
+       '/images/交互学校2.jpg',
+       '/images/交互学校3.jpg',
+       '/images/交互学校4.jpg',
+       '/images/交互学校5.jpg',
+       '/images/交互学校6.jpg',
+       '/images/交互学校7.jpg',
+      ]
   }
 ];
