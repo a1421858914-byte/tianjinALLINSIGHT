@@ -187,7 +187,7 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['IP形象'],
     cover: '/images/武清1.jpg', 
     images: [
-      '/images/武清1.jpg',
+      '/images/武清1.png',
       '/images/武清2.jpg',
       '/images/武清3.jpg',
       '/images/武清4.jpg',
