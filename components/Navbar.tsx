@@ -24,18 +24,18 @@ const Navbar: React.FC = () => {
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav shadow-lg shadow-black/30' : 'bg-transparent'}`}>
         <div className="container mx-auto px-6 md:px-12 py-4 flex justify-between items-center">
           <div className="logo">
-  <a href="#" className="group flex items-center gap-3">
-    <img 
-      src="/images/logo.png" 
-      alt="天津ALLINSIGHT logo" 
-      className="w-10 h-10 rounded-lg object-contain"  // 保持原尺寸和圆角
-    />
-    <div className="flex flex-col">
-      <span className="text-xl font-bold tracking-tight text-white leading-none">ALLINSIGHT</span>
-      <span className="text-[10px] tracking-widest text-gray-400 uppercase">Project</span>
-    </div>
-  </a>
-</div>
+            <a href="#" className="group flex items-center gap-3">
+              <img 
+                src="/images/logo.png" 
+                alt="天津ALLINSIGHT logo" 
+                className="w-10 h-10 rounded-lg object-contain"  // 保持原尺寸和圆角
+              />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold tracking-tight text-white leading-none">ALLINSIGHT</span>
+                <span className="text-[10px] tracking-widest text-gray-400 uppercase">Project</span>
+              </div>
+            </a>
+          </div>
           </a>
 
           {/* Desktop Nav */}
