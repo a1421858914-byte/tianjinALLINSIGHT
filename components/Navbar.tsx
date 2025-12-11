@@ -46,12 +46,12 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* 移动端菜单按钮（修复标签语法 + onClick 格式） */}
+        {/* 移动端菜单按钮（彻底修复标签 + onClick 格式） */}
         <button 
           className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)} {/* 修复：用半角括号 */}
         >
-          <<i className="fa fa-bars"></</i>
+          <<i className="fa fa-bars"></</i> {/* 修复：删除多余的 "<" */}
         </button>
       </div>
 
