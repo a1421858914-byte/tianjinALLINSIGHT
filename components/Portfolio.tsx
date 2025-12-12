@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { portfolioItems } from '../data/portfolioData';
 import { Category, PortfolioItem } from '../types';
+import WatermarkedImage from './WatermarkedImage';
 
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<Category | 'all'>('all');
@@ -81,13 +82,14 @@ const Portfolio: React.FC = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-[4/3] overflow-hidden relative">
-                <img 
+                {/* 使用 WatermarkedImage 替换普通 img */}
+                <WatermarkedImage 
                   src={item.cover} 
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-60"></div>
-                <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-60 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm pointer-events-none">
                   <span className="px-6 py-2 border border-white text-white rounded-full font-bold tracking-widest transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     查看详情
                   </span>
@@ -146,11 +148,15 @@ const Portfolio: React.FC = () => {
                     <video 
                       src={selectedItem.videoUrl} 
                       controls 
+                      controlsList="nodownload" // 禁止下载按钮
+                      disablePictureInPicture // 禁止画中画
+                      onContextMenu={(e) => e.preventDefault()} // 禁止右键菜单
                       className="w-full h-full object-contain"
                       poster={selectedItem.cover}
                     />
                  ) : (
-                    <img 
+                    // 使用 WatermarkedImage 替换普通 img
+                    <WatermarkedImage 
                       src={selectedItem.images[currentImageIndex]} 
                       alt={`Slide ${currentImageIndex}`} 
                       className="w-full h-full object-contain"
@@ -162,13 +168,13 @@ const Portfolio: React.FC = () => {
                    <>
                     <button 
                       onClick={prevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all z-20"
                     >
                       <i className="fa fa-chevron-left"></i>
                     </button>
                     <button 
                       onClick={nextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all z-20"
                     >
                       <i className="fa fa-chevron-right"></i>
                     </button>
@@ -187,7 +193,8 @@ const Portfolio: React.FC = () => {
                         currentImageIndex === idx ? 'border-primary opacity-100' : 'border-transparent opacity-50 hover:opacity-80'
                       }`}
                     >
-                      <img src={img} className="w-full h-full object-cover" alt="thumb" />
+                       {/* 缩略图也加上水印，防止从小图窃取 */}
+                       <WatermarkedImage src={img} className="w-full h-full object-cover" alt="thumb" />
                     </button>
                   ))}
                 </div>
@@ -244,6 +251,10 @@ const Portfolio: React.FC = () => {
       )}
     </section>
   );
+};
+
+export default Portfolio;
+
 };
 
 export default Portfolio;
