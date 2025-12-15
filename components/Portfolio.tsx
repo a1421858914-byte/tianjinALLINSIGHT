@@ -13,7 +13,6 @@ const Portfolio: React.FC = () => {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   const filters = [
-    { label: '全部', value: 'all' },
     { label: '品牌全案', value: Category.BRAND },
     { label: '视频制作', value: Category.VIDEO },
     { label: '智能培训', value: Category.TRAINING },
