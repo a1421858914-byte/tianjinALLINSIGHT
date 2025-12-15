@@ -15,10 +15,8 @@ const Hero: React.FC = () => {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight animate-fade-in-up opacity-0" style={{ animationDelay: '0.3s' }}>
           <span className="block text-white mb-2 text-gradient">ALLINSIGHT</span>
           <span className="text-white text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider block mt-4">
-            AI设计-品牌全案-视频制作-3D打印
           </span>
           <span className="text-white text-xl md:text-2xl font-medium tracking-wide block mt-2 opacity-80">
-            全链条服务
           </span>
         </h1>
         
