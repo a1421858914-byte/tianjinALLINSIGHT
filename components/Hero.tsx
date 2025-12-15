@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         
         <div className="flex flex-col sm:flex-row justify-center gap-5 animate-fade-in-up opacity-0" style={{ animationDelay: '0.7s' }}>
           <a href="#works" className="btn-glow px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-1 transition-all">
-            浏览作品集
+            浏览项目
           </a>
           <a href="#contact" className="px-8 py-4 rounded-full glass-card hover:bg-white/10 text-white font-medium transform hover:-translate-y-1 transition-all">
             联系合作
