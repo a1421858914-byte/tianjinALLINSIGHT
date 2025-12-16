@@ -15,7 +15,7 @@ const Portfolio: React.FC = () => {
   // 状态记录当前选中的分类，null 表示未打开分类弹窗
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
   // 监听分类弹窗状态，锁定/解锁背景滚动
   useEffect(() => {
@@ -30,7 +30,7 @@ const Portfolio: React.FC = () => {
   // Modal 打开逻辑 (保持不变)
   const openModal = (item: PortfolioItem) => {
     setSelectedItem(item);
-    setCurrentImageIndex(0);
+    setCurrentMediaIndex(0);
     // 注意：这里不需要再设置 overflow: hidden，因为 selectedCategory 已经锁住了，
     // 但为了保险起见（比如直接打开详情），保留也没问题，或者依靠 selectedItem 的逻辑
     document.body.style.overflow = 'hidden';
