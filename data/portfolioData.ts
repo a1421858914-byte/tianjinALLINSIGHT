@@ -250,7 +250,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '河北区政府',
     description: '基于AIGC生成的艺术风格化视频。',
     tags: ['公益视频'],
-    cover: '/images/津问封面1.jpg', 
+    cover: '/images/视频津问封面.jpg', 
     videoUrl: '/images/videos/津问.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
