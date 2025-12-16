@@ -14,6 +14,6 @@ export interface PortfolioItem {
   tags: string[];
   cover: string; // Thumbnail image
   images: string[]; // Array of images for the carousel
-  videoUrls?: string[]; // Optional video URL
+  videoUrl?: string; // Optional video URL
   awards?: string[];
 }
