@@ -70,7 +70,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '津南区小站稻',
     description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
     tags: ['IP形象', '地方文旅', '3D打印'],
-    cover: '/images/Allinsight-品牌全案_15.jpg',
+    cover: '/images/品牌小站封面.jpg',
     images: [
       '/images/Allinsight-品牌全案_13.jpg',
       '/images/Allinsight-品牌全案_14.jpg',
@@ -120,7 +120,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: '/images/大龙邮局5.jpg', 
+    cover: '/images/品牌大龙邮局封面.png', 
     images: [
       '/images/大龙邮局1.jpg',   
       '/images/大龙邮局2.jpg',  
@@ -169,7 +169,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '中建新科',
     description: '中建新科IP形象及伴手礼。',
     tags: ['IP形象', '产品图册', '伴手礼' ],
-    cover: '/images/科宝1.jpg', 
+    cover: '/images/品牌科宝封面.jpg', 
     images: [
       '/images/科宝1.jpg',
       '/images/科宝2.jpg',
@@ -239,7 +239,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: '荣获东方设计奖全国一等奖的公益普法视频，以哪吒形象进行反诈宣传。',
     awards: ['东方设计奖一等奖'],
     tags: ['公益视频', 'MG动画'],
-    cover: '/images/哪吒封面1.jpg', 
+    cover: '/images/视频哪吒封面.png', 
     videoUrl: '/images/videos/哪吒反诈.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
