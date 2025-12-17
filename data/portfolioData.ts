@@ -49,7 +49,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
     tags: ['LOGO', 'IP形象', '文创'],
-    cover: '/images/Allinsight-品牌全案_10.jpg',// 对应 public/images/下的文件
+    cover: '/images/创小星封面.png',// 对应 public/images/下的文件
     images: [
       '/images/创小星1.jpg',
       '/images/Allinsight-品牌全案_09.jpg',
@@ -100,7 +100,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: '/images/品牌大龙邮局封面.png', 
+    cover: '/images/品牌大邮局封面.jpg', 
     images: [
       '/images/大龙邮局1.jpg',   
       '/images/大龙邮局2.jpg',  
@@ -163,17 +163,6 @@ export const portfolioItems: PortfolioItem[] = [
   // --- Video Production (视频制作) ---
   {
     id: 'video-1',
-    title: '金皇酒店宣传视频',
-    category: Category.VIDEO,
-    client: '天津金皇大酒店',
-    description: '金皇酒店IP与实景结合的创意宣传视频。',
-    tags: ['宣传视频', '实景合成'],
-    cover: '/images/金皇封面1.jpg',
-    videoUrl: '/images/videos/金皇.mp4', 
-    images: ['https://picsum.photos/1200/800?random=20']
-  },
-  {
-    id: 'video-2',
     title: '2024青春盛典',
     category: Category.VIDEO,
     client: '广告人集团',
@@ -184,7 +173,7 @@ export const portfolioItems: PortfolioItem[] = [
     images: ['https://picsum.photos/1200/800?random=22']
   },
   {
-    id: 'video-3',
+    id: 'video-2',
     title: '聊斋新语',
     category: Category.VIDEO,
     client: '自研',
@@ -194,8 +183,40 @@ export const portfolioItems: PortfolioItem[] = [
     videoUrl: '/images/videos/聊斋新语1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
-  {
+   {
+    id: 'video-3',
+    title: '聊斋新语-现代',
+    category: Category.VIDEO,
+    client: '自研',
+    description: '基于AIGC生成的艺术风格化视频，重构聊斋志异的奇幻世界。',
+    tags: ['AI视频', '艺术'],
+    cover: '/images/数字皮囊封面.png''/images/数字皮囊.png'/images/videos/聊斋新语1.mp4',
+    images: ['https://picsum.photos/1200/800?random=22']
+  },
+   {
     id: 'video-4',
+    title: '津问',
+    category: Category.VIDEO,
+    client: '河北区政府',
+    description: '基于AIGC生成的艺术风格化视频。',
+    tags: ['公益视频'],
+    cover: '/images/视频津问封面.jpg', 
+    videoUrl: '/images/videos/津问.mp4',
+    images: ['https://picsum.photos/1200/800?random=23']
+  },
+  {
+    id: 'video-5',
+    title: '金皇酒店宣传视频',
+    category: Category.VIDEO,
+    client: '天津金皇大酒店',
+    description: '金皇酒店IP与实景结合的创意宣传视频。',
+    tags: ['宣传视频', '实景合成'],
+    cover: '/images/金皇封面1.jpg',
+    videoUrl: '/images/videos/金皇.mp4', 
+    images: ['https://picsum.photos/1200/800?random=20']
+  },
+  {
+    id: 'video-6',
     title: '哪吒反诈之年报风云',
     category: Category.VIDEO,
     client: '津南区市场监管局',
@@ -204,17 +225,6 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['公益视频', 'MG动画'],
     cover: '/images/视频哪吒封面.png', 
     videoUrl: '/images/videos/哪吒反诈.mp4',
-    images: ['https://picsum.photos/1200/800?random=23']
-  },
-   {
-    id: 'video-5',
-    title: '津问',
-    category: Category.VIDEO,
-    client: '河北区政府',
-    description: '基于AIGC生成的艺术风格化视频。',
-    tags: ['公益视频'],
-    cover: '/images/视频津问封面.jpg', 
-    videoUrl: '/images/videos/津问.mp4',
     images: ['https://picsum.photos/1200/800?random=23']
   },
 
