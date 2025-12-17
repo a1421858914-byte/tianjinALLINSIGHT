@@ -264,6 +264,21 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/Allinsight-智能培训_13.jpg',       
     ]
   },
+  {
+    id: 'training-3',
+    title: '金皇大酒店AIGC培训',
+    category: Category.TRAINING,
+    client: '天津金皇大酒店',
+    description: '提供AIGC学习，智能体搭建"。',
+    tags: ['培训', '智能体搭建'],
+    cover: '/images/培训金皇1.jpg', 
+    images: [
+      '/images/培训金皇2.jpg',
+      '/images/培训金皇3.jpg',
+      '/images/培训金皇4.jpg',     
+      '/images/培训金皇5.jpg',             
+    ]
+  },
 
   // --- Interactive Exhibition (交互展陈) ---
   {
