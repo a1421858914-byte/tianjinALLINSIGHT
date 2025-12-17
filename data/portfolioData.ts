@@ -190,7 +190,8 @@ export const portfolioItems: PortfolioItem[] = [
     client: '自研',
     description: '基于AIGC生成的艺术风格化视频，重构聊斋志异的奇幻世界。',
     tags: ['AI视频', '艺术'],
-    cover: '/images/数字皮囊封面.png''/images/数字皮囊.png'/images/videos/聊斋新语1.mp4',
+    cover: '/images/数字皮囊封面.png'
+    videoUrl: '/images/videos/聊斋视频2.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
    {
