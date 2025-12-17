@@ -79,26 +79,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-4',
-    title: '织采采 / 香香象',
-    category: Category.BRAND,
-    client: '武清区织采宫',
-    description: '非遗文化IP化设计，结合盲盒包装与文创产品开发。',
-    tags: ['IP形象', '包装设计', '非遗'],
-    cover: '/images/织采采4.jpg',
-    images: [
-      '/images/织采采1.jpg',
-      '/images/织采采2.jpg',
-      '/images/织采采3.jpg',
-      '/images/织采采4.jpg',
-      '/images/织采采5.jpg',
-      '/images/织采采6.jpg',
-      '/images/织采采7.jpg',
-      '/images/织采采8.jpg',
-      '/images/织采采9.jpg'
-    ]
-  },
-  {
-    id: 'brand-5',
     title: '金瑞 (Jinrui)',
     category: Category.BRAND,
     client: '天津市金街',
@@ -114,7 +94,7 @@ export const portfolioItems: PortfolioItem[] = [
     ]
   },
   {
-    id: 'brand-6',
+    id: 'brand-5',
     title: '大龙邮局 龙族IP',
     category: Category.BRAND,
     client: '和平区中国邮政',
@@ -130,7 +110,7 @@ export const portfolioItems: PortfolioItem[] = [
     ]
   },
    {
-    id: 'brand-7',
+    id: 'brand-6',
     title: '天津金皇大酒店 IP形象设计',
     category: Category.BRAND,
     client: '天津金皇大酒店',
@@ -147,7 +127,7 @@ export const portfolioItems: PortfolioItem[] = [
     ]
   },
   {
-    id: 'brand-8',
+    id: 'brand-7',
     title: '2024中泰职业教育国际产教融合发展研讨会会议 雕塑及伴手礼',
     category: Category.BRAND,
     client: '2024中泰职业教育国际产教融合发展研讨会会议',
@@ -163,7 +143,7 @@ export const portfolioItems: PortfolioItem[] = [
     ]
   },
   {
-    id: 'brand-9',
+    id: 'brand-8',
     title: '中建新科 IP形象',
     category: Category.BRAND,
     client: '中建新科',
@@ -178,24 +158,7 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/科宝5.jpg'
     ]
   },
-  {
-    id: 'brand-10',
-    title: '武清果蔬 萌宠系列',
-    category: Category.BRAND,
-    client: '武清区农委',
-    description: '武清果树萌宠IP。',
-    tags: ['IP形象'],
-    cover: '/images/武清1.png', 
-    images: [
-      '/images/武清1.png',
-      '/images/武清2.jpg',
-      '/images/武清3.jpg',
-      '/images/武清4.jpg',
-      '/images/武清5.jpg',
-      '/images/武清6.jpg',
-      '/images/武清7.jpg'
-    ]
-  },
+  
 
   // --- Video Production (视频制作) ---
   {
@@ -302,22 +265,4 @@ export const portfolioItems: PortfolioItem[] = [
     cover: '/images/Allinsight-交互展陈_01.jpg',
     images: ['/images/交互河北区1.jpg']
   },
-  {
-    id: 'exhibit-2',
-    title: 'AI+艺术思政协同创新中心',
-    category: Category.EXHIBITION,
-    client: '天津商务职业学院',
-    description: '校园展陈设计，数字化互动大屏与实体展板的结合。',
-    tags: ['展厅设计', '校园文化'],
-    cover: '/images/Allinsight-交互展陈_01.jpg', 
-    images: [
-      '/images/交互学校1.jpg',
-      '/images/交互学校2.jpg',
-      '/images/交互学校3.jpg',
-      '/images/交互学校4.jpg',
-      '/images/交互学校5.jpg',
-      '/images/交互学校6.jpg',
-      '/images/交互学校7.jpg',
-    ]
-  }
 ];
