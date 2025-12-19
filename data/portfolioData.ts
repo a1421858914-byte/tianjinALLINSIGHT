@@ -273,6 +273,7 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['培训', '智能体搭建'],
     cover: '/images/金皇培训封面.jpg', 
     images: [
+      '/images/金皇培训封面.jpg', 
       '/images/培训金皇2.jpg',
       '/images/培训金皇3.jpg',
       '/images/培训金皇4.jpg',     
