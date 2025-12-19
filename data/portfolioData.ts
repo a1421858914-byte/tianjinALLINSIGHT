@@ -271,7 +271,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '提供AIGC学习，智能体搭建"。',
     tags: ['培训', '智能体搭建'],
-    cover: '/images/培训金皇.png', 
+    cover: '/images/培训金皇封面.jpg', 
     images: [
       '/images/培训金皇2.jpg',
       '/images/培训金皇3.jpg',
