@@ -237,7 +237,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '江苏海洋大学、东方好创意等',
     description: '提供AIGC学习、智能体搭建、八小时定向设计挑战赛等专业培训服务。',
     tags: ['AI培训', 'Agent', '教育'],
-    cover: '/images/培训智能体.png',
+    cover: '/images/培训智能体.jpg',
     images: [
       '/images/Allinsight-智能培训_02.jpg',
       '/images/Allinsight-智能培训_03.jpg', 
