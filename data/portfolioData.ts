@@ -116,7 +116,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '天津金皇大酒店专属IP形象设计及周边文创。',
     tags: ['IP形象', '文创', '培训', '智能体', '培训'],
-    cover: '/images/金皇1.jpg', 
+    cover: '/images/金皇封面.png', 
     images: [
       '/images/金皇1.jpg', 
       '/images/金皇2.jpg',
@@ -271,7 +271,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '提供AIGC学习，智能体搭建"。',
     tags: ['培训', '智能体搭建'],
-    cover: '/images/培训金皇1.jpg', 
+    cover: '/images/培训金皇封面.png', 
     images: [
       '/images/培训金皇2.jpg',
       '/images/培训金皇3.jpg',
