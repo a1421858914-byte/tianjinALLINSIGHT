@@ -116,10 +116,10 @@ export const portfolioItems: PortfolioItem[] = [
     client: '天津金皇大酒店',
     description: '天津金皇大酒店专属IP形象设计及周边文创。',
     tags: ['IP形象', '文创', '培训', '智能体', '培训'],
-    cover: '/images/金皇封面.png', 
+    cover: '/images/品牌金皇封面.jpg', 
     images: [
+      '/images/品牌金皇封面.jpg', 
       '/images/金皇1.jpg', 
-      '/images/金皇2.jpg',
       '/images/金皇3.jpg',
       '/images/金皇4.jpg',
       '/images/金皇5.jpg',
