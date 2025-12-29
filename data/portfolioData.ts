@@ -143,7 +143,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-8',
-    title: '中建新科 IP形象',
+    title: '科宝 中建新科 IP形象设计',
     category: Category.BRAND,
     client: '中建新科',
     description: '中建新科IP形象及伴手礼。',
