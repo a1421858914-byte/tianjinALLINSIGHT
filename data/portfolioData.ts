@@ -79,7 +79,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-4',
-    title: '金瑞 (Jinrui)',
+    title: '金瑞 天津市金街 IP形象设计',
     category: Category.BRAND,
     client: '天津市金街',
     description: '天津市金街IP征集设计一等奖作品。',
@@ -95,7 +95,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-5',
-    title: '大龙邮局 龙族IP',
+    title: '龙族IP 中国邮政 IP品牌全案',
     category: Category.BRAND,
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
@@ -110,7 +110,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
    {
     id: 'brand-6',
-    title: '天津金皇大酒店 IP形象设计',
+    title: '金小皇金小泽 天津金皇大酒店 IP品牌全案',
     category: Category.BRAND,
     client: '天津金皇大酒店',
     description: '天津金皇大酒店专属IP形象设计及周边文创。',
@@ -127,7 +127,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-7',
-    title: '2024中泰职业教育国际产教融合发展研讨会会议 雕塑及伴手礼',
+    title: '喜哥巧妹 2024中泰职业教育国际产教融合发展研讨会会议 IP品牌全案',
     category: Category.BRAND,
     client: '2024中泰职业教育国际产教融合发展研讨会会议',
     description: '2024中泰职业教育国际产教融合发展研讨会会议主题雕塑及伴手礼。',
