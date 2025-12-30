@@ -292,3 +292,16 @@ export const portfolioItems: PortfolioItem[] = [
     images: ['/images/交互河北区1.jpg']
   },
 ];
+
+// --- Interactive Exhibition (平面设计) ---
+  {
+    id: 'exhibit-1',
+    title: 'AR沉浸式数字交互方案',
+    category: Category.EXHIBITION,
+    client: '河北区政府',
+    description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
+    tags: ['AR', '交互设计', '数字展陈'],
+    cover: '/images/Allinsight-交互展陈_01.jpg',
+    images: ['/images/交互河北区1.jpg']
+  },
+];
