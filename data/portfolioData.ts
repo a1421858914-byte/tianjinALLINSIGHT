@@ -293,12 +293,12 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-// --- Interactive Exhibition (平面设计) ---
+// --- Graphic design (平面设计) ---
   {
-    id: 'exhibit-1',
+    id: 'design-1',
     title: 'AR沉浸式数字交互方案',
     category: Category.EXHIBITION,
-    client: '河北区政府',
+    client: '天津金皇大酒店'，   
     description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
     tags: ['AR', '交互设计', '数字展陈'],
     cover: '/images/Allinsight-交互展陈_01.jpg',
