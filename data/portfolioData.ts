@@ -293,15 +293,15 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-// --- Graphic design (平面设计) ---
+  // --- Graphic design (平面设计) ---
   {
     id: 'design-1',
     title: 'AR沉浸式数字交互方案',
-    category: Graphic design,
-    client: '天津金皇大酒店'，   
+    category:' Graphic. design',
+    client: '河北区政府',
     description: '聚焦商业场景，突出为品牌打造系统性视觉标识（如 LOGO、VI 系统）的核心职能，凸显高端商业服务属性。',
     tags: ['PS', '平面视觉', '视觉创意'],
     cover: '/images/幻灯片1.JPG_01.jpg',
-    images: ['/images/交互河北区1.jpg']
+    images: ['/images/交互河北区1.jpg'],
   },
 ];
