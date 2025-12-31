@@ -297,11 +297,11 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: 'design-1',
     title: 'AR沉浸式数字交互方案',
-    category: Category.EXHIBITION,
+    category: Graphic design,
     client: '天津金皇大酒店'，   
-    description: '结合AR技术与实景雕塑，实现“名人复活”般的互动体验。',
-    tags: ['AR', '交互设计', '数字展陈'],
-    cover: '/images/Allinsight-交互展陈_01.jpg',
+    description: '聚焦商业场景，突出为品牌打造系统性视觉标识（如 LOGO、VI 系统）的核心职能，凸显高端商业服务属性。',
+    tags: ['PS', '平面视觉', '视觉创意'],
+    cover: '/images/幻灯片1.JPG_01.jpg',
     images: ['/images/交互河北区1.jpg']
   },
 ];
