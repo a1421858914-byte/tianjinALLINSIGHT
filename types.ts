@@ -2,7 +2,9 @@ export enum Category {
   BRAND = 'brand',
   VIDEO = 'video',
   TRAINING = 'training',
-  EXHIBITION = 'exhibition'
+  EXHIBITION = 'exhibition',
+  GRAPHIC_DESIGN = 'graphic_design',
+  CULTURE_IP = 'culture_ip'
 }
 
 export interface PortfolioItem {
@@ -14,6 +16,6 @@ export interface PortfolioItem {
   tags: string[];
   cover: string; // Thumbnail image
   images: string[]; // Array of images for the carousel
-  videoUrl?: string; // Optional video URL
+  videoUrl?: string; 
   awards?: string[];
 }
