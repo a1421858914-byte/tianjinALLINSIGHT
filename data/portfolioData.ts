@@ -220,7 +220,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
     tags: ['LOGO', 'IP形象', '文创'],
-    cover: '/images/创小星封面.png',// 对应 public/images/下的文件
+    cover: '/images/f6719ce7e8bf7b9976844cc721cf5e2.jpg',// 对应 public/images/下的文件
     images: [
       '/images/创小星1.jpg',
       '/images/Allinsight-品牌全案_10.jpg',
