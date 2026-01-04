@@ -3,21 +3,63 @@ import { portfolioItems } from '../data/portfolioData';
 import { Category, PortfolioItem } from '../types';
 import WatermarkedImage from './WatermarkedImage';
 
-// 定义4个分类板块的视觉配置
+// 定义6个分类板块的视觉配置
 const CATEGORY_SECTIONS = [
-  { id: Category.BRAND, label: '品牌全案', icon: 'fa-cube', desc: 'Brand Identity & Strategy', colorClass: 'text-purple-400', bgClass: 'group-hover:bg-purple-500/10' },
-  { id: Category.VIDEO, label: '视频制作', icon: 'fa-play-circle', desc: 'Video Production', colorClass: 'text-rose-400', bgClass: 'group-hover:bg-rose-500/10' },
-  { id: Category.TRAINING, label: '智能培训', icon: 'fa-graduation-cap', desc: 'AI Training', colorClass: 'text-blue-400', bgClass: 'group-hover:bg-blue-500/10' },
-  { id: Category.EXHIBITION, label: '交互展陈', icon: 'fa-tv', desc: 'Interactive Exhibition', colorClass: 'text-cyan-400', bgClass: 'group-hover:bg-cyan-500/10' },
+  { 
+    id: Category.BRAND, 
+    label: '品牌全案', 
+    icon: 'fa-cube', 
+    desc: 'Brand Identity & Strategy', 
+    colorClass: 'text-purple-400', 
+    bgClass: 'group-hover:bg-purple-500/10' 
+  },
+  { 
+    id: Category.CULTURE_IP, 
+    label: '文旅IP', 
+    icon: 'fa-map-signs', 
+    desc: 'Culture & Tourism IP', 
+    colorClass: 'text-orange-400', 
+    bgClass: 'group-hover:bg-orange-500/10' 
+  },
+  { 
+    id: Category.GRAPHIC_DESIGN, 
+    label: '平面设计', 
+    icon: 'fa-paint-brush', 
+    desc: 'Graphic Design', 
+    colorClass: 'text-emerald-400', 
+    bgClass: 'group-hover:bg-emerald-500/10' 
+  },
+  { 
+    id: Category.VIDEO, 
+    label: '视频制作', 
+    icon: 'fa-play-circle', 
+    desc: 'Video Production', 
+    colorClass: 'text-rose-400', 
+    bgClass: 'group-hover:bg-rose-500/10' 
+  },
+  { 
+    id: Category.TRAINING, 
+    label: '智能培训', 
+    icon: 'fa-graduation-cap', 
+    desc: 'AI Training', 
+    colorClass: 'text-blue-400', 
+    bgClass: 'group-hover:bg-blue-500/10' 
+  },
+  { 
+    id: Category.EXHIBITION, 
+    label: '交互展陈', 
+    icon: 'fa-tv', 
+    desc: 'Interactive Exhibition', 
+    colorClass: 'text-cyan-400', 
+    bgClass: 'group-hover:bg-cyan-500/10' 
+  },
 ];
 
 const Portfolio: React.FC = () => {
-  // 状态记录当前选中的分类，null 表示未打开分类弹窗
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
-  // 监听分类弹窗状态，锁定/解锁背景滚动
   useEffect(() => {
     if (selectedCategory) {
       document.body.style.overflow = 'hidden';
@@ -27,19 +69,14 @@ const Portfolio: React.FC = () => {
     return () => { document.body.style.overflow = 'auto'; };
   }, [selectedCategory]);
 
-  // Modal 打开逻辑 (保持不变)
   const openModal = (item: PortfolioItem) => {
     setSelectedItem(item);
-    setCurrentImageIndex(0);
-    // 注意：这里不需要再设置 overflow: hidden，因为 selectedCategory 已经锁住了，
-    // 但为了保险起见（比如直接打开详情），保留也没问题，或者依靠 selectedItem 的逻辑
+    setCurrentMediaIndex(0);
     document.body.style.overflow = 'hidden';
   };
 
-  // Modal 关闭逻辑 (保持不变)
   const closeModal = () => {
     setSelectedItem(null);
-    // 如果分类弹窗还在，保持锁定；否则解锁
     if (selectedCategory) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -47,24 +84,36 @@ const Portfolio: React.FC = () => {
     }
   };
 
-  // 图片切换逻辑 (保持不变)
-  const nextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!selectedItem) return;
-    setCurrentImageIndex((prev) => (prev + 1) % selectedItem.images.length);
+  // 构造统一的媒体列表（视频+图片）
+  const getMediaList = (item: PortfolioItem) => {
+    const list: { type: 'video' | 'image'; url: string }[] = [];
+    if (item.videoUrl) {
+      list.push({ type: 'video', url: item.videoUrl });
+    }
+    if (item.images) {
+      item.images.forEach(img => list.push({ type: 'image', url: img }));
+    }
+    return list;
   };
 
-  const prevImage = (e: React.MouseEvent) => {
+  const mediaList = selectedItem ? getMediaList(selectedItem) : [];
+
+  const nextMedia = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (!selectedItem) return;
-    setCurrentImageIndex((prev) => (prev - 1 + selectedItem.images.length) % selectedItem.images.length);
+    if (mediaList.length === 0) return;
+    setCurrentMediaIndex((prev) => (prev + 1) % mediaList.length);
+  };
+
+  const prevMedia = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (mediaList.length === 0) return;
+    setCurrentMediaIndex((prev) => (prev - 1 + mediaList.length) % mediaList.length);
   };
 
   return (
     <section id="works" className="py-24 relative bg-dark">
       <div className="container mx-auto px-6 md:px-12">
         
-        {/* 标题区域：始终显示 */}
         <div className="flex flex-col justify-between items-start mb-16 gap-6 animate-fade-in-up">
           <div>
             <h2 className="text-4xl font-bold text-white mb-4">精选作品</h2>
@@ -74,10 +123,9 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
 
-        {/* 状态 1: 始终显示 4 个分类入口卡片 (去除了 !selectedCategory 判断) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in-up">
+        {/* 分类入口网格 - 调整为 md:grid-cols-2 lg:grid-cols-3 以平衡6个卡片 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up">
           {CATEGORY_SECTIONS.map((section) => {
-            // 计算该分类下的作品数量
             const count = portfolioItems.filter(item => item.category === section.id).length;
             
             return (
@@ -86,7 +134,6 @@ const Portfolio: React.FC = () => {
                 onClick={() => setSelectedCategory(section.id)}
                 className={`group relative h-64 glass-card rounded-3xl p-8 cursor-pointer border border-white/5 hover:border-white/20 ${section.bgClass} transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col justify-between overflow-hidden`}
               >
-                  {/* 背景光效 */}
                   <div className="absolute right-0 top-0 w-32 h-32 bg-white/5 blur-[50px] rounded-full group-hover:bg-white/10 transition-colors"></div>
 
                   <div className="relative z-10">
@@ -94,7 +141,7 @@ const Portfolio: React.FC = () => {
                       <i className={`fa ${section.icon}`}></i>
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-white transition-colors">{section.label}</h3>
-                    <p className="text-gray-500 text-sm">{section.desc}</p>
+                    <p className="text-gray-500 text-sm tracking-wider uppercase opacity-80">{section.desc}</p>
                   </div>
 
                   <div className="relative z-10 flex justify-between items-end border-t border-white/5 pt-4 mt-4">
@@ -108,30 +155,27 @@ const Portfolio: React.FC = () => {
           })}
         </div>
 
-        {/* 状态 2: 分类弹窗 (Modal Overlay) */}
+        {/* 类别下的作品列表弹窗 */}
         {selectedCategory && (
           <div className="fixed inset-0 z-[60] bg-dark/95 backdrop-blur-xl overflow-y-auto animate-fade-in-up">
             <div className="container mx-auto px-6 md:px-12 py-12">
-              {/* 弹窗头部：返回按钮和标题 */}
               <div className="flex items-center gap-6 mb-12 sticky top-0 bg-dark/80 backdrop-blur-md p-4 -mx-4 md:mx-0 md:rounded-2xl z-20 border-b md:border border-white/5 shadow-2xl">
                   <button 
                     onClick={() => setSelectedCategory(null)} 
                     className="w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-white hover:text-black transition-all group shrink-0"
-                    title="关闭"
                   >
                     <i className="fa fa-times text-xl group-hover:scale-110 transition-transform"></i>
                   </button>
                   <div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
+                    <h2 className="text-2xl md:text-3xl font-bold text-white">
                       {CATEGORY_SECTIONS.find(c => c.id === selectedCategory)?.label}
                     </h2>
-                    <p className="text-gray-400 text-xs md:text-sm tracking-wider">
-                      {CATEGORY_SECTIONS.find(c => c.id === selectedCategory)?.desc}
+                    <p className="text-gray-400 text-xs md:text-sm tracking-wider uppercase">
+                      Explore our projects
                     </p>
                   </div>
               </div>
 
-              {/* 作品网格 (Grid) */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
                 {portfolioItems
                   .filter(item => item.category === selectedCategory)
@@ -155,44 +199,24 @@ const Portfolio: React.FC = () => {
                           </span>
                         </div>
                       </div>
-                      
                       <div className="p-5">
-                        <div className="flex justify-between items-start mb-2">
-                          <h3 className="text-lg font-bold text-white truncate pr-2">{item.title}</h3>
-                          {item.awards && (
-                            <span className="text-yellow-500 text-xs border border-yellow-500/30 bg-yellow-500/10 px-2 py-0.5 rounded">
-                              <i className="fa fa-trophy mr-1"></i>获奖
-                            </span>
-                          )}
-                        </div>
-                        
+                        <h3 className="text-lg font-bold text-white truncate mb-2">{item.title}</h3>
                         <p className="text-gray-400 text-sm line-clamp-2 h-10 mb-3">{item.description}</p>
                         <div className="flex flex-wrap gap-2">
                           {item.tags.slice(0, 3).map(tag => (
-                            <span key={tag} className="text-xs text-gray-500 bg-white/5 px-2 py-1 rounded">{tag}</span>
+                            <span key={tag} className="text-[10px] uppercase tracking-wider text-gray-400 bg-white/5 px-2 py-1 rounded">{tag}</span>
                           ))}
                         </div>
                       </div>
                     </div>
                 ))}
               </div>
-
-              {/* 空状态提示 */}
-              {portfolioItems.filter(item => item.category === selectedCategory).length === 0 && (
-                <div className="flex flex-col items-center justify-center py-32 text-center border border-dashed border-white/5 rounded-3xl bg-white/[0.02]">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center mb-6 shadow-inner">
-                    <i className="fa fa-folder-open-o text-3xl text-gray-600"></i>
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-300 mb-2">该分类下暂无作品</h3>
-                  <p className="text-gray-500 text-sm">我们会尽快更新更多精彩案例。</p>
-                </div>
-              )}
             </div>
           </div>
         )}
       </div>
 
-      {/* Detail Modal (完全保留原有的 Modal 逻辑和样式) */}
+      {/* 详情弹窗 (Detail Modal) */}
       {selectedItem && (
         <div className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl flex items-center justify-center p-4">
           <button 
@@ -202,107 +226,87 @@ const Portfolio: React.FC = () => {
             <i className="fa fa-times text-4xl"></i>
           </button>
 
-          <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-8 h-[90vh] lg:h-auto">
-            {/* Left: Carousel */}
-            <div className="lg:w-2/3 flex flex-col justify-center relative bg-black/50 rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
-              
-              {/* Main Media Display */}
-              <div className="relative w-full h-[50vh] lg:h-[600px] flex items-center justify-center bg-black">
-                 {selectedItem.category === Category.VIDEO && selectedItem.videoUrl && currentImageIndex === 0 ? (
-                    <video 
-                      src={selectedItem.videoUrl} 
-                      controls 
-                      controlsList="nodownload"
-                      disablePictureInPicture
-                      onContextMenu={(e) => e.preventDefault()}
-                      className="w-full h-full object-contain"
-                      poster={selectedItem.cover}
-                    />
-                 ) : (
-                    <WatermarkedImage 
-                      src={selectedItem.images[currentImageIndex]} 
-                      alt={`Slide ${currentImageIndex}`} 
-                      className="w-full h-full object-contain"
-                    />
+          <div className="w-full max-w-6xl flex flex-col lg:flex-row gap-8 h-[90vh] lg:h-auto overflow-y-auto no-scrollbar">
+            {/* 媒体展示区 */}
+            <div className="lg:w-2/3 flex flex-col justify-center relative bg-black/50 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <div className="relative w-full h-[40vh] lg:h-[600px] flex items-center justify-center bg-black">
+                 {mediaList.length > 0 && (
+                   mediaList[currentMediaIndex].type === 'video' ? (
+                      <video 
+                        key={mediaList[currentMediaIndex].url}
+                        src={mediaList[currentMediaIndex].url} 
+                        controls 
+                        playsInline
+                        className="w-full h-full object-contain"
+                        poster={selectedItem.cover}
+                      />
+                   ) : (
+                      <WatermarkedImage 
+                        src={mediaList[currentMediaIndex].url} 
+                        alt="Project Slide" 
+                        className="w-full h-full object-contain"
+                      />
+                   )
                  )}
                  
-                 {/* Navigation Arrows */}
-                 {selectedItem.images.length > 1 && (
+                 {mediaList.length > 1 && (
                    <>
-                    <button 
-                      onClick={prevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all z-20"
-                    >
-                      <i className="fa fa-chevron-left"></i>
-                    </button>
-                    <button 
-                      onClick={nextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm transition-all z-20"
-                    >
-                      <i className="fa fa-chevron-right"></i>
-                    </button>
+                    <button onClick={prevMedia} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm z-20"><i className="fa fa-chevron-left"></i></button>
+                    <button onClick={nextMedia} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-sm z-20"><i className="fa fa-chevron-right"></i></button>
                    </>
                  )}
               </div>
 
-              {/* Thumbnails */}
-              {selectedItem.images.length > 1 && (
+              {/* 缩略图导航 */}
+              {mediaList.length > 1 && (
                 <div className="p-4 flex gap-2 overflow-x-auto no-scrollbar bg-dark/50 border-t border-white/5">
-                  {selectedItem.images.map((img, idx) => (
+                  {mediaList.map((media, idx) => (
                     <button 
                       key={idx}
-                      onClick={() => setCurrentImageIndex(idx)}
+                      onClick={() => setCurrentMediaIndex(idx)}
                       className={`relative w-20 h-14 rounded-md overflow-hidden flex-shrink-0 border-2 transition-all ${
-                        currentImageIndex === idx ? 'border-primary opacity-100' : 'border-transparent opacity-50 hover:opacity-80'
+                        currentMediaIndex === idx ? 'border-primary opacity-100' : 'border-transparent opacity-50 hover:opacity-80'
                       }`}
                     >
-                       <WatermarkedImage src={img} className="w-full h-full object-cover" alt="thumb" />
+                       {media.type === 'video' ? (
+                         <div className="w-full h-full bg-gray-800 flex items-center justify-center"><i className="fa fa-play text-white/50"></i></div>
+                       ) : (
+                         <WatermarkedImage src={media.url} className="w-full h-full object-cover" alt="thumb" />
+                       )}
                     </button>
                   ))}
                 </div>
               )}
             </div>
 
-            {/* Right: Info */}
-            <div className="lg:w-1/3 flex flex-col text-left overflow-y-auto max-h-[40vh] lg:max-h-[600px] p-2">
+            {/* 文字详情区 */}
+            <div className="lg:w-1/3 flex flex-col text-left p-2">
               <span className="text-primary text-sm font-bold tracking-widest uppercase mb-2">
                 {CATEGORY_SECTIONS.find(c => c.id === selectedItem.category)?.label}
               </span>
               <h3 className="text-3xl font-bold text-white mb-6">{selectedItem.title}</h3>
-              
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-2">客户 / 对象</h4>
+                  <h4 className="text-xs text-gray-500 uppercase tracking-wider mb-1">客户</h4>
                   <p className="text-gray-200">{selectedItem.client || '自研项目'}</p>
                 </div>
-                
                 {selectedItem.awards && selectedItem.awards.length > 0 && (
                   <div>
-                    <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-2">获得奖项</h4>
+                    <h4 className="text-xs text-gray-500 uppercase tracking-wider mb-1">奖项</h4>
                     <div className="flex flex-wrap gap-2">
-                      {selectedItem.awards.map(award => (
-                        <span key={award} className="text-yellow-400 text-sm flex items-center">
-                          <i className="fa fa-trophy mr-2"></i>{award}
-                        </span>
-                      ))}
+                      {selectedItem.awards.map(a => <span key={a} className="text-yellow-400 text-sm flex items-center"><i className="fa fa-trophy mr-2"></i>{a}</span>)}
                     </div>
                   </div>
                 )}
-
                 <div>
-                  <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-2">项目描述</h4>
-                  <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-                    {selectedItem.description}
-                  </p>
+                  <h4 className="text-xs text-gray-500 uppercase tracking-wider mb-1">描述</h4>
+                  <p className="text-gray-300 leading-relaxed text-sm">{selectedItem.description}</p>
                 </div>
-
                 <div>
-                  <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-2">标签</h4>
+                  <h4 className="text-xs text-gray-500 uppercase tracking-wider mb-1">标签</h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedItem.tags.map(tag => (
-                      <span key={tag} className="px-3 py-1 rounded-full bg-white/10 text-white text-xs">
-                        #{tag}
-                      </span>
+                      <span key={tag} className="px-3 py-1 rounded-full bg-white/10 text-white text-[10px]">#{tag}</span>
                     ))}
                   </div>
                 </div>
