@@ -223,8 +223,8 @@ export const portfolioItems: PortfolioItem[] = [
     cover: '/images/f6719ce7e8bf7b9976844cc721cf5e2.jpg',// 对应 public/images/下的文件
     images: [
       '/images/创小星1.jpg',
-      '/images/Allinsight-品牌全案_10.jpg',
       '/images/Allinsight-品牌全案_09.jpg',
+      '/images/Allinsight-品牌全案_10.jpg',
       '/images/Allinsight-品牌全案_11.jpg',
       '/images/创小星2.jpg',
       '/images/创小星3.jpg',
