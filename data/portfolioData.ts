@@ -172,7 +172,19 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/交互河北区1.jpg'
     ]
   },
-
+  {
+    id: 'graphic-2',
+    title: '节气灵兽 (Spirits of Solar Terms)',
+    category: Category.GRAPHIC_DESIGN,
+    client: '学院奖、织采宫',
+    description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
+    awards: ['美国设计奖', '法国设计奖', '缪斯设计奖'],
+    tags: ['IP全案', '包装设计', '文创周边'],
+    cover: '/images/节气灵兽封面.png',// 对应 public/images/下的文件
+    images: [
+      '/images/Allinsight-品牌全案_04.jpg',
+     ]
+   },
   
   // --- Brand Design (品牌全案) ---
   {
