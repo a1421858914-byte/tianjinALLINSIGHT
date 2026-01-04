@@ -15,6 +15,165 @@ import { Category, PortfolioItem } from '../types';
  */
 
 export const portfolioItems: PortfolioItem[] = [
+  // --- Culture & Tourism IP (文旅IP) ---
+  {
+    id: 'ip-1',
+    title: '节气灵兽 (Spirits of Solar Terms)',
+    category: Category.CULTURE_IP,
+    client: '学院奖、织采宫',
+    description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
+    awards: ['美国设计奖', '法国设计奖', '缪斯设计奖'],
+    tags: ['IP全案', '包装设计', '文创周边'],
+    cover: '/images/节气灵兽封面.png',
+    images: [
+      '/images/Allinsight-品牌全案_04.jpg',
+      '/images/节气灵兽1.jpg', 
+      '/images/节气灵兽2.jpg', 
+      '/images/节气灵兽3.jpg', 
+      '/images/节气灵兽4.jpg', 
+      '/images/节气灵兽5.jpg', 
+      '/images/节气灵兽6.jpg', 
+      '/images/节气灵兽7.jpg', 
+      '/images/节气灵兽8.jpg', 
+      '/images/Allinsight-品牌全案_03.jpg', 
+      '/images/Allinsight-品牌全案_05.jpg',
+      '/images/节气灵兽9.jpg', 
+      '/images/节气灵兽10.jpg', 
+      '/images/节气灵兽11.jpg'
+    ]
+  },
+  {
+    id: 'ip-2',
+    title: '创小星 (Chuang Xiaoxing)',
+    category: Category.CULTURE_IP,
+    client: '广告人集团',
+    description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
+    tags: ['LOGO', 'IP形象', '文创'],
+    cover: '/images/创小星封面.png',
+    images: [
+      '/images/创小星1.jpg',
+      '/images/Allinsight-品牌全案_10.jpg',
+      '/images/Allinsight-品牌全案_09.jpg',
+      '/images/Allinsight-品牌全案_11.jpg',
+      '/images/创小星2.jpg',
+      '/images/创小星3.jpg',
+      '/images/创小星4.jpg',
+      '/images/创小星5.jpg',
+      '/images/创小星6.jpg',
+      '/images/创小星7.jpg'
+    ]
+  },
+  {
+    id: 'ip-3',
+    title: '傲娇小站 (Pride Station)',
+    category: Category.CULTURE_IP,
+    client: '津南区小站稻',
+    description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
+    tags: ['IP形象', '地方文旅', '3D打印'],
+    cover: '/images/品牌小站封面.jpg',
+    images: [
+      '/images/Allinsight-品牌全案_13.jpg',
+      '/images/Allinsight-品牌全案_14.jpg',
+      '/images/Allinsight-品牌全案_15.jpg'
+    ]
+  },
+  {
+    id: 'ip-4',
+    title: '金瑞 天津市金街 IP形象设计',
+    category: Category.CULTURE_IP,
+    client: '天津市金街',
+    description: '天津市金街IP征集设计一等奖作品。',
+    awards: ['天津市金街IP征集一等奖'],
+    tags: ['IP形象', '手办'],
+    cover: '/images/金街2.jpg', 
+    images: [
+      '/images/金街1.jpg',  
+      '/images/金街2.jpg', 
+      '/images/金街3.jpg', 
+      '/images/金街4.jpg'
+    ]
+  },
+  {
+    id: 'ip-5',
+    title: '龙族IP 中国邮政 IP品牌全案',
+    category: Category.CULTURE_IP,
+    client: '和平区中国邮政',
+    description: '大龙邮局专属IP形象设计及邮政周边文创。',
+    tags: ['IP形象', '文创', '邮政'],
+    cover: '/images/大龙1.jpg', 
+    images: [
+      '/images/大龙2.jpg',   
+      '/images/大龙1.jpg',  
+      '/images/大龙邮局4.jpg', 
+      '/images/大龙邮局5.jpg'
+    ]
+  },
+  {
+    id: 'ip-6',
+    title: '金小皇金小泽 IP品牌全案',
+    category: Category.CULTURE_IP,
+    client: '天津金皇大酒店',
+    description: '天津金皇大酒店专属IP形象设计及周边文创。',
+    tags: ['IP形象', '文创', '形象塑造'],
+    cover: '/images/品牌金皇封面.jpg', 
+    images: [
+      '/images/品牌金皇封面.jpg', 
+      '/images/金皇1.jpg', 
+      '/images/金皇3.jpg',
+      '/images/金皇4.jpg',
+      '/images/金皇5.jpg',
+      '/images/金皇6.jpg'
+    ]
+  },
+  {
+    id: 'ip-7',
+    title: '喜哥巧妹 中泰职业教育研讨会IP',
+    category: Category.CULTURE_IP,
+    client: '中泰职业教育研讨会',
+    description: '2024中泰职业教育国际产教融合发展研讨会主题雕塑及伴手礼设计。',
+    tags: ['IP手办', '雕塑' ],
+    cover: '/images/喜哥巧妹1.jpg', 
+    images: [
+      '/images/喜哥巧妹1.jpg',
+      '/images/喜哥巧妹2.jpg',
+      '/images/喜哥巧妹3.jpg',
+      '/images/喜哥巧妹4.jpg',
+      '/images/喜哥巧妹5.jpg'
+    ]
+  },
+  {
+    id: 'ip-8',
+    title: '科宝 中建新科 IP形象设计',
+    category: Category.CULTURE_IP,
+    client: '中建新科',
+    description: '中建新科IP形象设计及文创周边。',
+    tags: ['IP形象', '伴手礼' ],
+    cover: '/images/品牌科宝封面.jpg', 
+    images: [
+      '/images/科宝1.jpg',
+      '/images/科宝2.jpg',
+      '/images/科宝3.jpg',
+      '/images/科宝4.jpg',
+      '/images/科宝5.jpg'
+    ]
+  },
+
+  // --- Graphic Design (平面设计) ---
+  {
+    id: 'graphic-1',
+    title: 'AR沉浸式数字交互视觉规范',
+    category: Category.GRAPHIC_DESIGN,
+    client: '河北区政府',
+    description: '为AR数字景观打造的系统性视觉标识，包含图标系统、版面规范及导视应用。',
+    tags: ['视觉识别', '版式设计', '导视系统'],
+    cover: '/images/幻灯片1.JPG_01.jpg',
+    images: [
+      '/images/幻灯片1.JPG_01.jpg',
+      '/images/交互河北区1.jpg'
+    ]
+  },
+
+  
   // --- Brand Design (品牌全案) ---
   {
     id: 'brand-1',
@@ -290,18 +449,5 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['AR', '交互设计', '数字展陈'],
     cover: '/images/Allinsight-交互展陈_01.jpg',
     images: ['/images/交互河北区1.jpg']
-  },
-];
-
-  // --- Graphic design (平面设计) ---
-  {
-    id: 'design-1',
-    title: 'AR沉浸式数字交互方案',
-    category:' Graphic. design',
-    client: '河北区政府',
-    description: '聚焦商业场景，突出为品牌打造系统性视觉标识（如 LOGO、VI 系统）的核心职能，凸显高端商业服务属性。',
-    tags: ['PS', '平面视觉', '视觉创意'],
-    cover: '/images/幻灯片1.JPG_01.jpg',
-    images: ['/images/交互河北区1.jpg'],
   },
 ];
