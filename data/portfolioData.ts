@@ -100,7 +100,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '和平区中国邮政',
     description: '大龙邮局专属IP形象设计及邮政周边文创。',
     tags: ['IP形象', '文创', '邮政'],
-    cover: '/images/大龙1.jpg', 
+    cover: '/images/ChatGPT Image 2025年4月30日 19_22_44.png', 
     images: [
       '/images/大龙2.jpg',   
       '/images/大龙1.jpg',  
