@@ -18,7 +18,7 @@ export const portfolioItems: PortfolioItem[] = [
   // --- Culture & Tourism IP (文旅IP) ---
   {
     id: 'ip-1',
-    title: '节气灵兽 (Spirits of Solar Terms)',
+    title: '节气灵兽',
     category: Category.CULTURE_IP,
     client: '学院奖、织采宫',
     description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
@@ -44,7 +44,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'ip-2',
-    title: '创小星 (Chuang Xiaoxing)',
+    title: '创小星',
     category: Category.CULTURE_IP,
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
@@ -65,7 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'ip-3',
-    title: '傲娇小站 (Pride Station)',
+    title: '傲娇小站',
     category: Category.CULTURE_IP,
     client: '津南区小站稻',
     description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
@@ -174,7 +174,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'graphic-2',
-    title: '节气灵兽 (Spirits of Solar Terms)',
+    title: '节气灵兽',
     category: Category.GRAPHIC_DESIGN,
     client: '学院奖、织采宫',
     description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
@@ -189,7 +189,7 @@ export const portfolioItems: PortfolioItem[] = [
   // --- Brand Design (品牌全案) ---
   {
     id: 'brand-1',
-    title: '节气灵兽 (Spirits of Solar Terms)',
+    title: '节气灵兽',
     category: Category.BRAND,
     client: '学院奖、织采宫',
     description: '山海经 X 二十四节气 IP全案设计。通过AI辅助设计，将传统文化与现代审美结合。',
@@ -215,7 +215,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-2',
-    title: '创小星 (Chuang Xiaoxing)',
+    title: '创小星',
     category: Category.BRAND,
     client: '广告人集团',
     description: '青春好物节品牌IP全案。包含LOGO设计、IP形象建模及延展文创。',
@@ -236,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-3',
-    title: '傲娇小站 (Pride Station)',
+    title: '傲娇小站',
     category: Category.BRAND,
     client: '津南区小站稻',
     description: '“躬身的希望，昂首的骄傲”。津南区特产小站稻的IP形象设计与文创落地。',
