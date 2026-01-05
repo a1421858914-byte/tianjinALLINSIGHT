@@ -387,7 +387,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'video-5',
-    title: '金皇酒店宣传视频',
+    title: '天津金皇大酒店宣传视频',
     category: Category.VIDEO,
     client: '天津金皇大酒店',
     description: '金皇酒店IP与实景结合的创意宣传视频。',
@@ -398,7 +398,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'video-6',
-    title: '哪吒反诈之年报风云',
+    title: '天津市场监管局哪吒反诈之年报风云',
     category: Category.VIDEO,
     client: '津南区市场监管局',
     description: '荣获东方设计奖全国一等奖的公益普法视频，以哪吒形象进行反诈宣传。',
