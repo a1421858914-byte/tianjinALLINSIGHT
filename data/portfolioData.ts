@@ -471,5 +471,22 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['AR', '交互设计', '数字展陈'],
     cover: '/images/Allinsight-交互展陈_01.jpg',
     images: ['/images/交互河北区1.jpg']
+    ]
   },
-];
+  {
+    id: 'brand-6',
+    title: '金小皇金小泽 天津金皇大酒店 IP品牌全案',
+    category: Category.BRAND,
+    client: '天津金皇大酒店',
+    description: '天津金皇大酒店专属IP形象设计及周边文创。',
+    tags: ['IP形象', '文创', '培训', '智能体', '培训'],
+    cover: '/images/品牌金皇封面.jpg', 
+    images: [
+      '/images/品牌金皇封面.jpg', 
+      '/images/金皇1.jpg', 
+      '/images/金皇3.jpg',
+      '/images/金皇4.jpg',
+      '/images/金皇5.jpg',
+      '/images/金皇6.jpg'
+   ]
+  },
