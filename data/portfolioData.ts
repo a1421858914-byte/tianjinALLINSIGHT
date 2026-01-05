@@ -348,7 +348,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: '广告人集团',
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
     tags: ['颁奖典礼', '活动视频'],
-    cover: '/images/学院奖封面1.png', 
+    cover: '/images/青春盛典报道1 (2).png', 
     videoUrl: '/images/videos/学院奖1.mp4',
     images: ['https://picsum.photos/1200/800?random=22']
   },
