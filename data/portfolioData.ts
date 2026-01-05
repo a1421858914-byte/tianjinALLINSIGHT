@@ -308,22 +308,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-7',
-    title: '喜哥巧妹 2024中泰职业教育国际产教融合发展研讨会会议 IP品牌全案',
-    category: Category.BRAND,
-    client: '2024中泰职业教育国际产教融合发展研讨会会议',
-    description: '2024中泰职业教育国际产教融合发展研讨会会议主题雕塑及伴手礼。',
-    tags: ['IP手办', '雕塑' ],
-    cover: '/images/喜哥巧妹1.jpg', 
-    images: [
-      '/images/喜哥巧妹1.jpg',
-      '/images/喜哥巧妹2.jpg',
-      '/images/喜哥巧妹3.jpg',
-      '/images/喜哥巧妹4.jpg',
-      '/images/喜哥巧妹5.jpg'
-    ]
-  },
-  {
-    id: 'brand-8',
     title: '科宝 中建新科 IP形象设计',
     category: Category.BRAND,
     client: '中建新科',
