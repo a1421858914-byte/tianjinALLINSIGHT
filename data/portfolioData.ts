@@ -186,6 +186,22 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/Allinsight-品牌全案_04.jpg',
      ]
    },
+  {
+    id: 'graphic-3',
+    title: '科宝 中建新科 IP形象设计',
+    category: Category.GRAPHIC_DESIGN,
+    client: '中建新科',
+    description: '中建新科IP形象设计及文创周边。',
+    tags: ['IP形象', '伴手礼' ],
+    cover: '/images/品牌科宝封面.jpg', 
+    images: [
+      '/images/新科宣传册设计 出血3mm_14.png',
+      '/images/新科宣传册设计 出血3mm_18.png',
+      '/images/新科宣传册设计 出血3mm_20.png',
+      '/images/新科宣传册设计 出血3mm_37.png',
+      '/images/新科宣传册设计 出血3mm_38.png'
+    ]
+  },
   
   // --- Brand Design (品牌全案) ---
   {
