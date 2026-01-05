@@ -473,9 +473,9 @@ export const portfolioItems: PortfolioItem[] = [
     images: ['/images/交互河北区1.jpg']
   },
   {
-    id: 'brand-6',
+    id: 'exhibit-2',
     title: '金小皇金小泽 天津金皇大酒店 IP品牌全案',
-    category: Category.BRAND,
+    category: Category.EXHIBITION,
     client: '天津金皇大酒店',
     description: '天津金皇大酒店专属IP形象设计及周边文创。',
     tags: ['IP形象', '文创', '培训', '智能体', '培训'],
