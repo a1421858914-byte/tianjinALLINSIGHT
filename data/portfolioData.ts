@@ -471,7 +471,6 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ['AR', '交互设计', '数字展陈'],
     cover: '/images/Allinsight-交互展陈_01.jpg',
     images: ['/images/交互河北区1.jpg']
-    ]
   },
   {
     id: 'brand-6',
