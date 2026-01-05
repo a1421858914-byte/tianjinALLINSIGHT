@@ -343,7 +343,7 @@ export const portfolioItems: PortfolioItem[] = [
   // --- Video Production (视频制作) ---
   {
     id: 'video-1',
-    title: '2024青春盛典',
+    title: '“校政行园企”机制架起产教融通桥梁——数智育人成果闪耀2025年艺术与设计类职业教育产教融合博览会',
     category: Category.VIDEO,
     client: '广告人集团',
     description: '创意星球学院奖颁奖典礼定制视频，大气磅礴的视觉呈现。',
