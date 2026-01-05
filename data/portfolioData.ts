@@ -278,7 +278,10 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/大龙1.jpg',  
       '/images/大龙邮局4.jpg', 
       '/images/大龙邮局5.jpg',
-      '/images/幻灯片15.JPG'
+      '/images/幻灯片15.JPG',
+      '/images/幻灯片16.JPG',
+      '/images/幻灯片23.JPG',
+      '/images/幻灯片27.JPG'
     ]
   },
    {
