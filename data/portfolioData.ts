@@ -262,6 +262,9 @@ export const portfolioItems: PortfolioItem[] = [
       '/images/金街1.jpg',  
       '/images/金街2.jpg', 
       '/images/金街3.jpg', 
+      '/images/金瑞3.png',
+      '/images/金瑞2.png',
+      '/images/金瑞1.png',
       '/images/金街4.jpg'
     ]
   },
